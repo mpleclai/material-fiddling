@@ -2,8 +2,6 @@
 
 This project is intended to be a test for me to explore Material, TypeScript, React (+ webdev as a whole).  
 
-======
-
 # Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
