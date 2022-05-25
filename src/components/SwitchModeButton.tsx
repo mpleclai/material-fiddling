@@ -14,15 +14,6 @@ export const SwitchModeButton = () => {
                 display: "flex"
             }}
         >
-            {/* {theme.palette.mode} mode */}
-            {/* <IconButton
-                sx={{ ml: 1 }}
-                onClick={colorMode.toggleColorMode}
-                color="inherit"
-            >
-                {theme.palette.mode === "dark" ? <LightIcon /> : <DarkIcon />}
-            </IconButton> */}
-
             <MaterialUISwitch
                 sx={{ ml: 1 }}
                 onChange={colorMode.toggleColorMode}
