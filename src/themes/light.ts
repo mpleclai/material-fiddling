@@ -14,6 +14,9 @@ export const lightTheme: ThemeOptions = {
             dark: "#c77800",
             contrastText: "#000000"
         },
-
+        background: {
+            default: "#fafafa",
+            paper: "#ffffff"
+        }
     },
 };

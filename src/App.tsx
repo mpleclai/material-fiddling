@@ -1,12 +1,12 @@
-import { createTheme, CssBaseline, PaletteMode, ThemeProvider } from "@mui/material";
+import { AppBar, Container, createTheme, CssBaseline, IconButton, PaletteMode, Paper, ThemeProvider } from "@mui/material";
 import React from 'react';
 import { ColorContext } from "./ColorContext";
-import AppBar from './components/CustomAppBar';
-import logo from './logo.svg';
+import CustomAppBar from './components/CustomAppBar';
 import { darkTheme } from "./themes/dark";
 import { lightTheme } from "./themes/light";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { routes as appRoutes } from "./routes";
+import { LinkedIn, GitHub, Instagram } from "@mui/icons-material";
 
 function App() {
   const [mode, setMode] = React.useState<PaletteMode>("light");
@@ -34,7 +34,7 @@ function App() {
         <div className="App">
           <header className="App-header">
             <Router>
-              <AppBar />
+              <CustomAppBar />
               <Routes>
                 {appRoutes.map((route) => (
                   <Route
@@ -45,11 +45,56 @@ function App() {
                 ))}
               </Routes>
             </Router>
-            {/* <img src={logo} className="App-logo" alt="logo" /> */}
           </header>
+          <AppBar
+            position="static"
+          >
+            <Container maxWidth="xl"
+              sx={{
+                margin: 2,
+                flexGrow: 1,
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center'
+              }}>
+              <IconButton
+                size="large"
+                color="inherit"
+              >
+                <LinkedIn
+                  sx={{
+                    height: 40,
+                    width: 40
+                  }}
+                />
+              </IconButton>
+              <IconButton
+                size="large"
+                color="inherit"
+              >
+                <GitHub
+                  sx={{
+                    height: 40,
+                    width: 40
+                  }}
+                />
+              </IconButton>
+              <IconButton
+                size="large"
+                color="inherit"
+              >
+                <Instagram
+                  sx={{
+                    height: 40,
+                    width: 40
+                  }}
+                />
+              </IconButton>
+            </Container>
+          </AppBar>
         </div>
       </ThemeProvider>
-    </ColorContext.Provider>
+    </ColorContext.Provider >
   );
 }
 

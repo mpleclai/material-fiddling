@@ -1,7 +1,7 @@
 import React, { ReactElement, FC } from "react";
 import picture from '../profile_pic_peru.png';
 
-import { Box, Card, CardContent, CardMedia, Container, IconButton, Typography } from "@mui/material";
+import { Box, Card, CardContent, CardMedia, Container, Divider, IconButton, Typography } from "@mui/material";
 import { GitHub, Instagram, LinkedIn } from "@mui/icons-material";
 
 const About: FC<any> = (): ReactElement => {
@@ -58,6 +58,8 @@ const About: FC<any> = (): ReactElement => {
                     <Typography gutterBottom variant="h5" component="div">
                         About Me
                     </Typography>
+                    <Divider></Divider>
+                    <br></br>
                     <Typography>
                         I am a graduate of Michigan Technological University located in Houghton, Michigan.
                         I have experience from several different organizations and clubs working

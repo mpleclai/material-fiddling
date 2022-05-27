@@ -26,13 +26,17 @@ const Resume: FC<any> = (): ReactElement => {
                 }}>
                 {/* <Box
                     sx={{
-                        width: 1 / 3,
+                        width: 1 / 8,
                         margin: 2
                     }}>
                     <CardMedia
+                        sx={{
+                            display: 'flex',
+                            justifyContent: 'center',
+                            alignItems: 'center'
+                        }}
                         component="img"
-                        image={`https://images.unsplash.com/photo-1525097487452-6278ff080c31`}
-                        alt="image"
+                        src={logo}
                     />
                 </Box> */}
                 <Box
