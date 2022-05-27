@@ -1,5 +1,5 @@
 import React, { ReactElement, FC } from "react";
-import { Box, ImageList, ImageListItem, Typography } from "@mui/material";
+import { Box, Container, ImageList, ImageListItem, Typography } from "@mui/material";
 
 const Art: FC<any> = (): ReactElement => {
 
@@ -56,30 +56,23 @@ const Art: FC<any> = (): ReactElement => {
     ];
 
     return (
-        // <Box sx={{
-        //     flexGrow: 1,
-        //     backgroundColor: 'whitesmoke',
-        //     display: 'flex',
-        //     justifyContent: 'center',
-        //     alignItems: 'center'
-        // }}>
-        //     <Typography variant="h3">Art</Typography>
-        // </Box>
-        <Box display='flex' flexDirection='row' alignItems='center' justifyContent='center' sx={{ overflowY: 'scroll' }
-        }>
-            <ImageList variant="quilted" cols={3} gap={8}>
-                {itemData.map((item) => (
-                    <ImageListItem key={item.img}>
-                        <img
-                            src={`${item.img}?w=248&fit=crop&auto=format`}
-                            srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
-                            alt={item.title}
-                            loading="lazy"
-                        />
-                    </ImageListItem>
-                ))}
-            </ImageList>
-        </Box >
+        <Container>
+            <Box display='flex' flexDirection='row' alignItems='center' justifyContent='center' sx={{ overflowY: 'scroll' }
+            }>
+                <ImageList variant="quilted" cols={3} gap={8}>
+                    {itemData.map((item) => (
+                        <ImageListItem key={item.img}>
+                            <img
+                                src={`${item.img}?w=248&fit=crop&auto=format`}
+                                srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
+                                alt={item.title}
+                                loading="lazy"
+                            />
+                        </ImageListItem>
+                    ))}
+                </ImageList>
+            </Box >
+        </Container>
     );
 };
 

@@ -1,23 +1,15 @@
-import { Article, Brush, Code, Computer, Psychology } from '@mui/icons-material';
+import { Computer } from '@mui/icons-material';
 import MenuIcon from '@mui/icons-material/Menu';
-import * as React from 'react';
-import { SwitchModeButton } from './SwitchModeButton';
-import { routes } from "../routes";
-import { NavLink, useNavigate } from "react-router-dom";
 import {
-    Box,
-    Link,
-    Container,
-    IconButton,
-    Toolbar,
-    Typography,
-    Button,
-    Drawer,
-    AppBar,
-    ListItem,
+    AppBar, Box, Button, Container, Drawer, IconButton, ListItem,
     ListItemIcon,
-    ListItemText
+    ListItemText, Toolbar,
+    Typography
 } from "@mui/material";
+import * as React from 'react';
+import { useNavigate } from "react-router-dom";
+import { routes } from "../routes";
+import { SwitchModeButton } from './SwitchModeButton';
 
 const ResponsiveAppBar = () => {
 
