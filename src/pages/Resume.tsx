@@ -1,6 +1,5 @@
 import { Computer, ExpandLess, ExpandMore, School, StarBorder } from "@mui/icons-material";
-import { Box, Card, CardContent, Typography, CardMedia, Container, Divider, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Collapse } from "@mui/material";
-import { red } from "@mui/material/colors";
+import { Box, Card, CardContent, Typography, CardMedia, Container, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Collapse } from "@mui/material";
 import React from "react";
 import { FC, ReactElement } from "react";
 

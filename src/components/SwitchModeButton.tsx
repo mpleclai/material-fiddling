@@ -1,11 +1,10 @@
-import { Box, useTheme } from "@mui/material";
+import { Box } from "@mui/material";
 import React from "react";
 import { ColorContext } from "../ColorContext";
 import { MaterialUISwitch } from "./MaterialUISwitch";
 
 
 export const SwitchModeButton = () => {
-    const colorTheme = useTheme();
     const colorMode = React.useContext(ColorContext);
 
     return (

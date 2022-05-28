@@ -1,14 +1,13 @@
-import { AppBar, Container, createTheme, CssBaseline, IconButton, Link, PaletteMode, Paper, ThemeProvider } from "@mui/material";
+import { createTheme, CssBaseline, PaletteMode, ThemeProvider } from "@mui/material";
 import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { ColorContext } from "./ColorContext";
 import CustomAppBar from './components/CustomAppBar';
 import CustomFooter from './components/CustomFooter';
-
+import { routes as appRoutes } from "./routes";
 import { darkTheme } from "./themes/dark";
 import { lightTheme } from "./themes/light";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { routes as appRoutes } from "./routes";
-import { LinkedIn, GitHub, Instagram } from "@mui/icons-material";
+
 
 function App() {
   const [mode, setMode] = React.useState<PaletteMode>("light");

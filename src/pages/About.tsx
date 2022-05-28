@@ -1,8 +1,7 @@
-import React, { ReactElement, FC } from "react";
+import { Box, Card, CardContent, CardMedia, Container, Divider, Typography } from "@mui/material";
+import React, { FC, ReactElement } from "react";
 import picture from '../profile_pic_peru.png';
 
-import { Box, Card, CardContent, CardMedia, Container, Divider, IconButton, Typography } from "@mui/material";
-import { GitHub, Instagram, LinkedIn } from "@mui/icons-material";
 
 const About: FC<any> = (): ReactElement => {
     return (

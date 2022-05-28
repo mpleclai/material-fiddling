@@ -1,5 +1,5 @@
 import React, { ReactElement, FC } from "react";
-import { Box, Container, ImageList, ImageListItem, Typography } from "@mui/material";
+import { Box, Container, ImageList, ImageListItem } from "@mui/material";
 
 const Art: FC<any> = (): ReactElement => {
 
