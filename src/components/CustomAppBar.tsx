@@ -11,7 +11,7 @@ import { useNavigate } from "react-router-dom";
 import { routes } from "../routes";
 import { SwitchModeButton } from './SwitchModeButton';
 
-const ResponsiveAppBar = () => {
+const CustomAppBar = () => {
 
     const [open, setOpen] = React.useState(false);
     const navigate = useNavigate()
@@ -113,4 +113,4 @@ const ResponsiveAppBar = () => {
         </AppBar>
     );
 };
-export default ResponsiveAppBar;
+export default CustomAppBar;

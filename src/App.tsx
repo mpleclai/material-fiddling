@@ -1,7 +1,9 @@
-import { AppBar, Container, createTheme, CssBaseline, IconButton, PaletteMode, Paper, ThemeProvider } from "@mui/material";
+import { AppBar, Container, createTheme, CssBaseline, IconButton, Link, PaletteMode, Paper, ThemeProvider } from "@mui/material";
 import React from 'react';
 import { ColorContext } from "./ColorContext";
 import CustomAppBar from './components/CustomAppBar';
+import CustomFooter from './components/CustomFooter';
+
 import { darkTheme } from "./themes/dark";
 import { lightTheme } from "./themes/light";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -46,52 +48,7 @@ function App() {
               </Routes>
             </Router>
           </header>
-          <AppBar
-            position="static"
-          >
-            <Container maxWidth="xl"
-              sx={{
-                margin: 2,
-                flexGrow: 1,
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center'
-              }}>
-              <IconButton
-                size="large"
-                color="inherit"
-              >
-                <LinkedIn
-                  sx={{
-                    height: 40,
-                    width: 40
-                  }}
-                />
-              </IconButton>
-              <IconButton
-                size="large"
-                color="inherit"
-              >
-                <GitHub
-                  sx={{
-                    height: 40,
-                    width: 40
-                  }}
-                />
-              </IconButton>
-              <IconButton
-                size="large"
-                color="inherit"
-              >
-                <Instagram
-                  sx={{
-                    height: 40,
-                    width: 40
-                  }}
-                />
-              </IconButton>
-            </Container>
-          </AppBar>
+          <CustomFooter />
         </div>
       </ThemeProvider>
     </ColorContext.Provider >

@@ -46,7 +46,6 @@ const About: FC<any> = (): ReactElement => {
                 <CardMedia
                     sx={{
                         padding: 1,
-                        width: 1 / 3,
                         display: 'flex',
                         justifyContent: 'center',
                         alignItems: 'center'
@@ -78,30 +77,6 @@ const About: FC<any> = (): ReactElement => {
                 justifyContent: 'center',
                 alignItems: 'center'
             }}>
-                <IconButton size="large">
-                    <LinkedIn
-                        sx={{
-                            height: 40,
-                            width: 40
-                        }}
-                    />
-                </IconButton>
-                <IconButton size="large">
-                    <GitHub
-                        sx={{
-                            height: 40,
-                            width: 40
-                        }}
-                    />
-                </IconButton>
-                <IconButton size="large">
-                    <Instagram
-                        sx={{
-                            height: 40,
-                            width: 40
-                        }}
-                    />
-                </IconButton>
             </Card>
 
         </Container >
