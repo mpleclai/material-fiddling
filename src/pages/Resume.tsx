@@ -110,7 +110,7 @@ const Resume: FC<any> = (): ReactElement => {
                 variant="outlined"
                 display='flex'
                 flexDirection='row'
-                justifyContent="center"
+                // justifyContent="center"
                 sx={{
                     margin: 2,
                     padding: 1,
@@ -118,7 +118,7 @@ const Resume: FC<any> = (): ReactElement => {
                 }}>
                 <Box
                     sx={{
-                        width: 2 / 3
+                        width: { xs: 1, md: 2 / 3, }
                     }}>
                     <CardContent>
                         <Typography gutterBottom variant="h5" component="div">
@@ -231,7 +231,8 @@ const Resume: FC<any> = (): ReactElement => {
                 <Box
                     sx={{
                         width: 1 / 3,
-                        margin: 2
+                        margin: 2,
+                        display: { xs: 'none', md: 'flex', }
                     }}>
                     <CardMedia
                         component="img"

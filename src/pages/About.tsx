@@ -18,8 +18,8 @@ const About: FC<any> = (): ReactElement => {
                     sx={{
                         margin: 2,
                         padding: 1,
-                        width: 1 / 3,
-                        display: 'flex',
+                        maxWidth: '1',
+                        display: { xs: 'flex', md: 'none' },
                         justifyContent: 'center',
                         alignItems: 'center'
                     }}>
@@ -39,8 +39,9 @@ const About: FC<any> = (): ReactElement => {
                     padding: 1,
                     flexGrow: 1,
                     display: 'flex',
+                    flexDirection: { xs: 'column', md: 'row' },
                     justifyContent: 'center',
-                    alignItems: 'center'
+                    alignItems: 'center',
                 }}>
                 <CardMedia
                     sx={{
