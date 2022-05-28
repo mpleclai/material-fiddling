@@ -1,3 +1,4 @@
+[![Build Status](https://drone.voxaelfox.com/api/badges/mpleclai/material-fiddling/status.svg)](https://drone.voxaelfox.com/mpleclai/material-fiddling) 
 # Fiddling with Material
 
 This project is intended to be a test for me to explore Material, TypeScript, React (+ webdev as a whole).  
